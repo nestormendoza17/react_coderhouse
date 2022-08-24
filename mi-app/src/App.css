@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.fondo_main {
+  background-color: aliceblue;
+}
+
+.link_header {
+  color: black;
+  font-weight: bold;
+}

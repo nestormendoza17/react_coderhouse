@@ -1,7 +1,6 @@
 
 import './App.css';
-import Header from './asset/Header';
-import Footer from './asset/Footer';
+import Navbar from './asset/Navbar';
 
 function App() {
   return (

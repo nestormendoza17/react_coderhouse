@@ -1,6 +1,6 @@
 import React from "react";
 import cart from "../img/cart.png";
-
+//carrito para el navbar
 const CartWidget = () => {
     return(
         <div>

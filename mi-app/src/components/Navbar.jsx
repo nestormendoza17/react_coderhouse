@@ -1,12 +1,12 @@
 import React from "react";
-import logo from "./images/logo_large.png";
+import CartWidget from "./Cardwidget";
 
-const Header = () => {
-    return (
-     <div className="container">
-      <ul className="nav">
+const Navbar = () => {
+    return(
+     <div className="container d-flex">
+      <ul className="nav d-flex">
         <li className="nav-item">
-         <a className="nav-link active" aria-current="page" href="#"><img src={logo} width="68"alt="logo" /></a>
+         <a className="nav-link active" aria-current="page" href="#"><img src="./logo_large.png" width="68"alt="logo" /></a>
         </li>
         <li className="nav-item">
          <a className="nav-link link_header" href="#">Historia</a>
@@ -17,7 +17,8 @@ const Header = () => {
         <li className="nav-item">
          <a className="nav-link link_header" href="#">Contacto</a>
         </li>
-      </ul>   
+        </ul>
+        <div className="d-flex"><a class="navbar-brand justify-content-end" href=""><CartWidget /></a></div>   
     </div>
     )
 }

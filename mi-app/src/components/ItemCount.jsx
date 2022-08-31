@@ -1,6 +1,5 @@
 import React, {useState} from "react";
-//contador de productos
-
+//contador 
 const ItemCount =({initial,stock,onAdd}) => {
     const [count, setcount] = useState(initial);
     const decrementa = () =>{

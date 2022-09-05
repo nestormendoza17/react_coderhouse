@@ -1,12 +1,12 @@
 
 import './App.css';
-import Navbar from './components/NavBar';
+import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 
 function App() {
   return (
     <div className='container-fluid fondo_main'>
-      <Navbar />
+      <NavBar />
       <hr />
       <ItemListContainer greeting="Vinos Diablo"/>
     </div>

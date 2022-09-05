@@ -2,7 +2,7 @@
 import CartWidget from "./Cartwidget";
 //navbar se incluye carrito y titulo de la tienda
 
-const Navbar = () => {
+const NavBar = () => {
     return(
      <div className="container d-flex">
         <div>Diablo Vinos</div>
@@ -25,4 +25,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar;
+export default NavBar;

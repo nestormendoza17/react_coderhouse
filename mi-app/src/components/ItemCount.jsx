@@ -9,13 +9,15 @@ const ItemCount =({initial,stock,onAdd}) => {
         setcount (count + 1);
     }
     return(
-        <div className="counter">
+        <div clasName="card">
+        <div className="card-body">
             <button className="boton" disabled={count<=initial} onClick={decrementa}>-</button>
             <span>{count}</span>
             <button className="boton" disabled={count>=stock} onClick={incrementa}>+</button>
             <div>
                 <button className="boton" disabled={count<=0} onClick={() => onAdd(count)}>Agregaste al carrito</button>
             </div>
+        </div>
         </div>
     );
 }

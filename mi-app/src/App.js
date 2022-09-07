@@ -1,11 +1,11 @@
 
-import './App.css';
-import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
+import "./App.css";
+import NavBar from "./components/NavBar";
+import ItemListContainer from "./components/ItemListContainer";
 
 function App() {
   return (
-    <div className='container-fluid fondo_main'>
+    <div className="container-fluid fondo_main">
       <NavBar />
       <hr />
       <ItemListContainer greeting="Vinos Diablo"/>

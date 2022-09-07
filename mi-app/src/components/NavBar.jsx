@@ -20,9 +20,10 @@ const NavBar = () => {
          <a className="nav-link link_header" href="#">Contacto</a>
         </li>
         </ul>
-        <div className="d-flex" alt="carrito"><a class="navbar-brand justify-content-end" href=""><CartWidget /></a></div>   
+        <div className="d-flex" alt="carrito"><a class="navbar-brand justify-content-end" href="#"><CartWidget /></a></div>   
     </div>
     )
 }
 
 export default NavBar;
+

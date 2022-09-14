@@ -1,12 +1,12 @@
 import React from "react";
 
-export const ItemDetail = ({data}) => {
+const ItemDetail = ({data}) => {
     return (
-        <div className="container">
+        <div clasName="contaniner">
             <div className="detail">
-                <img className='detail_image' src={data.image} alt="" />
-                <div className="content">
-                <h1>{data.title}</h1>
+                <img clasName='detail_image' src={data.image} alt="" />
+                <div clasName="content">
+                    <h1>{data.titulo}</h1>
                 </div>
             </div>
         </div>

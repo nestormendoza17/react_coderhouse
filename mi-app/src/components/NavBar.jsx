@@ -1,5 +1,6 @@
  import React from "react";
 import CartWidget from "./CartWidget";
+import { NavLink } from "react-router-dom";
 //navbar se incluye carrito y titulo de la tienda
 
 const NavBar = () => {
@@ -8,19 +9,16 @@ const NavBar = () => {
         <div>Diablo Vinos</div>
       <ul className="nav d-flex">
         <li className="nav-item">
-         <a className="nav-link active" aria-current="page" href="#"><img src="./logo_large.png" width="68"alt="logo" /></a>
+         <NavLink className="nav-link active" aria-current="page" to="/"><img src="./logo_large.png" width="68"alt="logo" /></NavLink>
         </li>
         <li className="nav-item">
-         <a className="nav-link link_header" href="#">Historia</a>
+         <NavLink className="nav-link link_header" to="/categoria/dulces">Dulces</NavLink>
         </li>
         <li className="nav-item">
-         <a className="nav-link link_header" href="#">Promos</a>
+         <NavLink className="nav-link link_header" to="/categoria/fuertes">Fuertes</NavLink>
         </li>
-        <li className="nav-item">
-         <a className="nav-link link_header" href="#">Contacto</a>
-        </li>
-        </ul>
-        <div className="d-flex" alt="carrito"><a class="navbar-brand justify-content-end" href="#"><CartWidget /></a></div>   
+       </ul>
+        <div className="d-flex" alt="carrito"><NavLink class="navbar-brand justify-content-end" to="/cart"><CartWidget /></NavLink></div>   
     </div>
     )
 }

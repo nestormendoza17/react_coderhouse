@@ -1,5 +1,6 @@
  import ItemDetail from "./ItemDetail";
 import React, {useEffect,useState} from "react";
+import { useParams } from "react-router-dom";
 
 
 const items = [
@@ -18,6 +19,8 @@ const items = [
 
 const ItemDetailContainer = () => {
     const [data, setData] = useState({});
+    const {detalleId} = useParams();
+
     
     useEffect(() => {
         const getData = new Promise(resolve => {
@@ -25,7 +28,7 @@ const ItemDetailContainer = () => {
                 resolve(items);
             }, 3000);
         });
-        getData.then(res => setData(res));
+        getData.then(res => setData(res.find(item => item.id) === parseInt (detalleId)));
     }, [])
 
     return (

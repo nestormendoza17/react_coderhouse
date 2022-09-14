@@ -1,5 +1,7 @@
 #Use Bootstrap
 In the project use Bootstrap v5.2
+Es un proyecto pensado para un micro emprendimiento de ventas de vinos. Trate de hacer un proyecto totalmente intuitiva y agradable al consumidor. 
+Se recurrio al recurso de React-Router-Dom para facilitar en la creacion de páginas para cada producto. 
 
 # Getting Started with Create React App
 
